@@ -1,6 +1,5 @@
-export async function fetchInitialPokemon(){
+export async function fetchInitialPokemon() {
   const resp = await fetch('https://alchemy-pokedex.herokuapp.com/api/pokedex/');
-  const data = resp.json();
-  console.log('data', data);
+  const data = await resp.json();
   return data.results;
 }
