@@ -5,7 +5,7 @@ import Select from '../Select/Select.js';
 import './Main.css';
 
 export default function Main() {
-  const { types, pokemon } = usePokemon();
+  const { pokemon, types } = usePokemon();
 
   return (
     <>
