@@ -1,9 +1,10 @@
 import React from 'react';
 import './Header.css';
+import logo from './assets/pokelogo.png';
 
 export default function Header() {
   return <header>
-    <img></img>
+    <img src={logo} ></img>
     <h1>React App</h1>
     <div className='fixer'></div>
   </header>;

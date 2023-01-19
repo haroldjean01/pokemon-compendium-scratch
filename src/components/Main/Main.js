@@ -1,15 +1,15 @@
 import React from 'react';
 import { usePokemon } from '../../hooks/usePokemon.js';
+import PokeCard from '../PokeCard/PokeCard.js';
+import './Main.css';
 
 export default function Main() {
   const pokemon = usePokemon();
 
   return (
-    <div>
+    <div className='poke-card-container'>
       {pokemon.map((poke) => (
-        <p key={poke.id}>
-          {poke.pokemon}
-        </p>
+        <PokeCard key={poke.id} {...poke} />
       ))}
     </div>
   );
