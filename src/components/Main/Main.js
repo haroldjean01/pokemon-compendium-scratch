@@ -4,10 +4,10 @@ import PokeCard from '../PokeCard/PokeCard.js';
 import './Main.css';
 
 export default function Main() {
-  const pokemon = usePokemon();
+  const { types, pokemon } = usePokemon();
 
   return (
-    <div className='poke-card-container'>
+    <div className="poke-card-container">
       {pokemon.map((poke) => (
         <PokeCard key={poke.id} {...poke} />
       ))}
