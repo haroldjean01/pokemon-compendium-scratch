@@ -2,8 +2,10 @@ import React from 'react';
 import '../../../src/Pokemon Solid.ttf';
 import './PokeCard.css';
 
+
 export default function PokeCard({ pokemon, url_image, type_1, pokedex, loading, type_2 }) {
   if (loading) return <span className='loader'></span>;
+
   return (
     <div className={`poke-card-${type_1}`}>
       <img className="poke-image" src={url_image} alt={`image of ${pokemon}`} />
