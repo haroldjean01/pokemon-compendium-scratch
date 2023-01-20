@@ -1,4 +1,3 @@
-import { type } from '@testing-library/user-event/dist/type/index.js';
 import React from 'react';
 import './PokeCard.css';
 
@@ -10,8 +9,8 @@ export default function PokeCard({ pokemon, url_image, type_1, pokedex, loading 
       <h1 className="name">{pokemon.toUpperCase()}</h1>
       <h3 className="type">{type_1}</h3>
       <div className='pokedex-div'>
-        <a className="pokedex" href={pokedex}>
-          {pokedex}
+        <a className="pokedex" href={pokedex} target='_blank' rel='noreferrer'>
+          See the Pokedex Entry!
         </a>
       </div>
     </div>
