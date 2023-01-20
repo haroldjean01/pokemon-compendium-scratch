@@ -5,7 +5,7 @@ import logo from './assets/pokelogo.png';
 export default function Header() {
   return <header>
     <img src={logo} ></img>
-    <h1>React App</h1>
+    <h1>Pokedex !</h1>
     <div className='fixer'></div>
   </header>;
 }
