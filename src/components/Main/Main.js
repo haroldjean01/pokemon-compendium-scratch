@@ -10,7 +10,7 @@ export default function Main() {
   const { pokemon, types, handleTypeChange, loading, handleSearch } = usePokemon();
 
   return (
-    <div style={{ backgroundImage: `url(${background})`, backgroundSize: '50%', backgroundRepeat: 'repeat' }}>
+    <div style={{ backgroundImage: `url(${background})`, backgroundSize: '50%', backgroundRepeat: 'repeat', width: '100%', height: '100%' }}>
       <Select types={types} handleTypeChange={handleTypeChange} />
       <Query handleSearch={handleSearch} />
       <div className="poke-card-container">
@@ -19,5 +19,6 @@ export default function Main() {
         ))}
       </div>
     </div>
+
   );
 }

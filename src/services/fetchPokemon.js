@@ -15,7 +15,7 @@ export async function fetchPokemon(type) {
   params.set('type', type);
 
   const response = await fetch(
-    `https://alchemy-pokedex.herokuapp.com/api/pokedex/?${params.toString()}`
+    `https://alchemy-pokedex.herokuapp.com/api/pokedex/?${params.toString()}&perPage=1000`
   );
 
   const data = await response.json();
@@ -28,7 +28,7 @@ export async function fetchPokemonByName(pokemon) {
   params.set('pokemon', pokemon);
 
   const response = await fetch(
-    `https://alchemy-pokedex.herokuapp.com/api/pokedex/?${params.toString()}`
+    `https://alchemy-pokedex.herokuapp.com/api/pokedex/?${params.toString()}&perPage=1000`
   );
 
   const data = await response.json();

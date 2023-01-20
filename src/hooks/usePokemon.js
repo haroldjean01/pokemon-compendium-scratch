@@ -32,8 +32,13 @@ export function usePokemon() {
   }, []);
 
   const handleTypeChange = async (type) => {
-    const data = await fetchPokemon(type);
-    setPokemon(data);
+    if (type === 'all') {
+      const data = await fetchInitialPokemon();
+      setPokemon(data);
+    } else {
+      const data = await fetchPokemon(type);
+      setPokemon(data);
+    }
   };
 
   const handleSearch = async (name) => {
