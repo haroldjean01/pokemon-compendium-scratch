@@ -4,22 +4,27 @@ import { fetchInitialPokemon, fetchPokemon, fetchPokemonTypes } from '../service
 export function usePokemon() {
   const [pokemon, setPokemon] = useState([]);
   const [types, setTypes] = useState([]);
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
+    setLoading(true);
     const fetchData = async () => {
       // load our pokemon
       const data = await fetchInitialPokemon();
       // set our pokemon in state
       setPokemon(data);
+      setLoading(false);
     };
     fetchData();
   }, []);
 
   useEffect(() => {
+    setLoading(true);
     const fetchData = async () => {
       // load our types
       const data = await fetchPokemonTypes();
       // set our types in state
       setTypes(data);
+      setLoading(false);
     };
     fetchData();
   }, []);
@@ -29,6 +34,5 @@ export function usePokemon() {
     setPokemon(data);
   };
 
-
-  return { pokemon, types, handleTypeChange };
+  return { pokemon, types, handleTypeChange, loading };
 }

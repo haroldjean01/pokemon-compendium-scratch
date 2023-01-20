@@ -5,14 +5,14 @@ import Select from '../Select/Select.js';
 import './Main.css';
 
 export default function Main() {
-  const { pokemon, types, handleTypeChange } = usePokemon();
+  const { pokemon, types, handleTypeChange, loading } = usePokemon();
 
   return (
     <>
       <Select types={types} handleTypeChange={handleTypeChange} />
       <div className="poke-card-container">
         {pokemon.map((poke) => (
-          <PokeCard key={poke.id} {...poke} />
+          <PokeCard key={poke.id} {...poke} loading={loading} />
         ))}
       </div>
     </>
