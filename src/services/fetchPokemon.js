@@ -23,9 +23,9 @@ export async function fetchPokemon(type) {
   return data.results;
 }
 
-export async function fetchPokemonByName(name) {
+export async function fetchPokemonByName(pokemon) {
   const params = new URLSearchParams();
-  params.set('name', name);
+  params.set('pokemon', pokemon);
 
   const response = await fetch(
     `https://alchemy-pokedex.herokuapp.com/api/pokedex/?${params.toString()}`

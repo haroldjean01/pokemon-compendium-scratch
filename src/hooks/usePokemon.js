@@ -5,6 +5,8 @@ export function usePokemon() {
   const [pokemon, setPokemon] = useState([]);
   const [types, setTypes] = useState([]);
   const [loading, setLoading] = useState(true);
+
+
   useEffect(() => {
     setLoading(true);
     const fetchData = async () => {
