@@ -22,10 +22,11 @@
   font-size: small;
   color: rgb(255, 255, 255);
 }
+
 .pokedex-div {
   background-color: black;
   width: 300px;
-  height: 30px;
+  height: 35px;
 }
 
 
@@ -162,6 +163,14 @@
 
 .poke-card-steel {
   background-color: lightslategray;
+  border: 5px solid black;
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+}
+
+.poke-card-flying {
+  background-color: rgb(85, 182, 182);
   border: 5px solid black;
   width: 300px;
   height: 300px;
