@@ -20,10 +20,18 @@
 
 .pokedex {
   font-size: small;
-  color: black;
+  color: rgb(255, 255, 255);
+}
+.pokedex-div {
+  background-color: black;
+  width: 300px;
+  height: 30px;
 }
 
-/* .poke-card-fire {
+
+
+
+.poke-card-fire {
   background-color: red;
   border: 5px solid black;
   width: 300px;
@@ -32,7 +40,7 @@
 }
 
 .poke-card-water {
-  background-color: blue;
+  background-color: skyblue;
   border: 5px solid black;
   width: 300px;
   height: 300px;
@@ -61,4 +69,101 @@
   width: 300px;
   height: 300px;
   margin: 20px;
-} */
+}
+
+.poke-card-fairy {
+  background-color: pink;
+  border: 5px solid black;
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+}
+
+.poke-card-poison {
+  background-color: rgb(230, 58, 230);
+  border: 5px solid black;
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+}
+
+.poke-card-bug {
+  background-color: greenyellow;
+  border: 5px solid black;
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+}
+
+.poke-card-dark {
+  color: white;
+  background-color: black;
+  border: 5px solid black;
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+}
+
+.poke-card-dragon {
+  background-color: rgb(96, 37, 190);
+  border: 5px solid black;
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+}
+
+.poke-card-fighting {
+  background-color: darkred;
+  border: 5px solid black;
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+}
+
+.poke-card-ghost {
+  background-color: rgb(105, 60, 105);
+  border: 5px solid black;
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+}
+
+.poke-card-ground {
+  background-color: brown;
+  border: 5px solid black;
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+}
+
+.poke-card-ice {
+  background-color: darkcyan;
+  border: 5px solid black;
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+}
+
+.poke-card-psychic {
+  background-color: hotpink;
+  border: 5px solid black;
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+}
+
+.poke-card-rock {
+  background-color: rgb(177, 147, 72);
+  border: 5px solid black;
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+}
+
+.poke-card-steel {
+  background-color: lightslategray;
+  border: 5px solid black;
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+}
