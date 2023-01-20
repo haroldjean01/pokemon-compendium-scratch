@@ -1,9 +1,14 @@
+@font-face {
+  font-family: 'Pokemon';
+  src: url('../../Pokemon\ Solid.ttf') format('truetype');
+}
+
 .poke-card {
   background-color: red;
   border: 5px solid black;
   width: 300px;
   height: 300px;
-  margin: 20px;
+  margin: 20px4
 }
 
 .poke-image {
@@ -14,8 +19,10 @@
 }
 
 .name {
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  height: 30px;
+  font-family: 'pokemon';
   font-weight: lighter;
+  margin-top: -40px;
 }
 
 .pokedex {
@@ -27,16 +34,27 @@
   background-color: black;
   width: 300px;
   height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.type {
+  margin-top: 187px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: lighter;
+  font-size: x-large;
+  margin-bottom: 15px;
 }
 
 .loader {
-  width: 16px;
-  height: 16px;
+  width: 500px;
+  height: 500px;
   border-radius: 50%;
   display: block;
   margin:15px auto;
   position: relative;
-  background: #FFF;
+  background: rgb(0, 0, 0);
   box-shadow: -24px 0 #FFF, 24px 0 #FFF;
   box-sizing: border-box;
   animation: shadowPulse 2s linear infinite;
@@ -45,15 +63,15 @@
 @keyframes shadowPulse {
   33% {
     background: #FFF;
-    box-shadow: -24px 0 #FF3D00, 24px 0 #FFF;
+    box-shadow: -24px 0 #ff0000, 24px 0 #FFF;
   }
   66% {
-    background: #FF3D00;
+    background: #ff0000;
     box-shadow: -24px 0 #FFF, 24px 0 #FFF;
   }
   100% {
     background: #FFF;
-    box-shadow: -24px 0 #FFF, 24px 0 #FF3D00;
+    box-shadow: -24px 0 #FFF, 24px 0 #ff0000;
   }
 }
 
@@ -63,7 +81,7 @@
   background-color: red;
   border: 5px solid black;
   width: 300px;
-  height: 300px;
+  height: 400px;
   margin: 20px;
 }
 
@@ -71,7 +89,7 @@
   background-color: skyblue;
   border: 5px solid black;
   width: 300px;
-  height: 300px;
+  height: 400px;
   margin: 20px;
 }
 
@@ -79,7 +97,7 @@
   background-color: green;
   border: 5px solid black;
   width: 300px;
-  height: 300px;
+  height: 400px;
   margin: 20px;
 }
 
@@ -87,7 +105,7 @@
   background-color: beige;
   border: 5px solid black;
   width: 300px;
-  height: 300px;
+  height: 400px;
   margin: 20px;
 }
 
@@ -95,7 +113,7 @@
   background-color: yellow;
   border: 5px solid black;
   width: 300px;
-  height: 300px;
+  height: 400px;
   margin: 20px;
 }
 
@@ -103,7 +121,7 @@
   background-color: pink;
   border: 5px solid black;
   width: 300px;
-  height: 300px;
+  height: 400px;
   margin: 20px;
 }
 
@@ -111,7 +129,7 @@
   background-color: rgb(230, 58, 230);
   border: 5px solid black;
   width: 300px;
-  height: 300px;
+  height: 400px;
   margin: 20px;
 }
 
@@ -119,7 +137,7 @@
   background-color: greenyellow;
   border: 5px solid black;
   width: 300px;
-  height: 300px;
+  height: 400px;
   margin: 20px;
 }
 
@@ -128,7 +146,7 @@
   background-color: black;
   border: 5px solid black;
   width: 300px;
-  height: 300px;
+  height: 400px;
   margin: 20px;
 }
 
@@ -136,7 +154,7 @@
   background-color: rgb(96, 37, 190);
   border: 5px solid black;
   width: 300px;
-  height: 300px;
+  height: 400px;
   margin: 20px;
 }
 
@@ -144,7 +162,7 @@
   background-color: darkred;
   border: 5px solid black;
   width: 300px;
-  height: 300px;
+  height: 400px;
   margin: 20px;
 }
 
@@ -152,7 +170,7 @@
   background-color: rgb(105, 60, 105);
   border: 5px solid black;
   width: 300px;
-  height: 300px;
+  height: 400px;
   margin: 20px;
 }
 
@@ -160,7 +178,7 @@
   background-color: brown;
   border: 5px solid black;
   width: 300px;
-  height: 300px;
+  height: 400px;
   margin: 20px;
 }
 
@@ -168,7 +186,7 @@
   background-color: darkcyan;
   border: 5px solid black;
   width: 300px;
-  height: 300px;
+  height: 400px;
   margin: 20px;
 }
 
@@ -176,7 +194,7 @@
   background-color: hotpink;
   border: 5px solid black;
   width: 300px;
-  height: 300px;
+  height: 400px;
   margin: 20px;
 }
 
@@ -184,7 +202,7 @@
   background-color: rgb(177, 147, 72);
   border: 5px solid black;
   width: 300px;
-  height: 300px;
+  height: 400px;
   margin: 20px;
 }
 
@@ -192,7 +210,7 @@
   background-color: lightslategray;
   border: 5px solid black;
   width: 300px;
-  height: 300px;
+  height: 400px;
   margin: 20px;
 }
 
@@ -200,6 +218,6 @@
   background-color: rgb(85, 182, 182);
   border: 5px solid black;
   width: 300px;
-  height: 300px;
+  height: 400px;
   margin: 20px;
 }
